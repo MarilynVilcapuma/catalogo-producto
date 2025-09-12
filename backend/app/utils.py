@@ -14,9 +14,9 @@ def test_oracle_connection():
             dsn=dsn
         )
         with conn.cursor() as cursor:
-            cursor.execute("SELECT * FROM FICHAS")
+            cursor.execute("SELECT * FROM productos")
             rows = cursor.fetchall()
-            print("📚 Fichas encontradas:" if rows else "⚠️ No hay registros.")
+            print("Productos encontrados:" if rows else "⚠️ No hay registros.")
     except oracledb.DatabaseError as e:
         error, = e.args
         print(f"❌ Error: {error.message}")

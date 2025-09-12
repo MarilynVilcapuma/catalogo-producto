@@ -15,7 +15,7 @@ touch nombre_del_archivo.ext - crear archivo
 
 PARA EJECUTAR EL FROENTEND
  npm run dev
-
+npm install
 # revisar contenedores activos
 docker ps
 # revisar contenedores activos e inactivos
