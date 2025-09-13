@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Variables de conexión
-DB_USER = os.getenv("DB_USER", "JUANA")
+DB_USER = os.getenv("DB_USER", "system")
 DB_PASS = os.getenv("DB_PASS", "Admin12345")
 DB_HOST = os.getenv("DB_HOST", "localhost")
 DB_PORT = os.getenv("DB_PORT", "1521")
